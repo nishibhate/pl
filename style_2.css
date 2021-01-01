@@ -1,0 +1,22 @@
+#block1
+    {
+        background-color: #F5F5F5;
+        margin-left:0ch;
+        padding-left: 50 px;
+        padding-right: 100 px;
+    }
+    #block2
+    {
+        background-color:#bdacac; 
+    }
+    pre
+    {
+        font-family:'Times New Roman', Times, serif;
+        font-size:larger;
+        color: blue;
+    }
+    h3
+    {
+        font-family:'Times New Roman', Times, serif;
+        font-size:larger;
+    }
