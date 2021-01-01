@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <script> 
+            function myalert() 
+            { 
+                alert("Your form will be submitted . Thanks for your valuable feedback !"); 
+            } 
+            function activateButton(element) 
+            {
+                if(element.checked) 
+                {
+                    document.getElementById("submit").disabled = false;
+                }
+                else  
+                {
+                    document.getElementById("submit").disabled = true;
+                }
+            }
+      </script> 
+    </head>
+    <body style="background-color:rgb(98, 157, 190)">
+        <h1 ALIGN="center">Walchand College of Engineering,Sangli</h1>
+        <br>
+        <h2  ALIGN="center">Student feedback on hostel facilities</h2>
+        <br>
+        <hr>
+        <br>
+        <form style="font-size:larger;margin-left: 200px;margin-right:200px;padding:30px;background-color:rgb(221, 184, 208);border:14px ;border-color: rgb(11, 12, 12);">
+            <label for="name"><b>Student name:</b></label>
+            <input type="text" id="name" name="name" maxlength="50">
+
+            <br><br>
+
+            <label for="gender">&ensp;&ensp;&ensp;&ensp;<b>Gender:</b></label>
+
+            &nbsp;
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            &nbsp;
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            &nbsp;
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+
+            <br><br><br>
+
+            <label for="room"><b>Room Number:</b></label>
+            <input type="number" id="room" name="room" min=1 max=500>
+
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+
+            <label for="floor">&nbsp;<b>Floor Number:</b></label>
+            <input type="number" id="floor" name="floor" min=1 max=6>
+
+            <br><br><br>
+
+            <h4>Scale the below hostel facilities!</h4><br>
+
+            <label for="hygiene"><b>Room hygiene: </b></label>             &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;
+
+            <input type="radio" id="Very Good" name="hygiene" value="Very Good"><label for="Very Good">Very Good</label> &nbsp;
+            <input type="radio" id="Good"      name="hygiene" value="Good">     <label for="Good">Good          </label> &nbsp;
+            <input type="radio" id="Average"   name="hygiene" value="Average">  <label for="Average">Average    </label> &nbsp;
+            <input type="radio" id="Poor"      name="hygiene" value="Poor">     <label for="Poor">Poor          </label> &nbsp;
+            <input type="radio" id="Very Poor" name="hygiene" value="Very Poor"><label for="Very Poor">Very Poor</label>
+
+            <br><br>
+
+            <label for="lc"><b>Lighting & Cleaning: </b></label>                     &ensp;&ensp;&ensp;&nbsp;
+
+            <input type="radio" id="Very Good" name="lc" value="Very Good"><label for="Very Good">Very Good</label> &nbsp;
+            <input type="radio" id="Good"      name="lc" value="Good">     <label for="Good">Good          </label> &nbsp;
+            <input type="radio" id="Average"   name="lc" value="Average">  <label for="Average">Average    </label> &nbsp;
+            <input type="radio" id="Poor"      name="lc" value="Poor">     <label for="Poor">Poor          </label> &nbsp;
+            <input type="radio" id="Very Poor" name="lc" value="Very Poor"><label for="Very Poor">Very Poor</label>
+
+            <br><br>
+
+            <label for="w"><b>Washroom(light & water): </b></label>
+
+            <input type="radio" id="Very Good" name="w" value="Very Good"><label for="Very Good">Very Good</label> &nbsp;
+            <input type="radio" id="Good"      name="w" value="Good">     <label for="Good">Good          </label> &nbsp;
+            <input type="radio" id="Average"   name="w" value="Average">  <label for="Average">Average    </label> &nbsp;
+            <input type="radio" id="Poor"      name="w" value="Poor">     <label for="Poor">Poor          </label> &nbsp;
+            <input type="radio" id="Very Poor" name="w" value="Very Poor"><label for="Very Poor">Very Poor</label>
+
+            <br><br>
+
+            <label for="if"><b>Internet Facilities: </b></label> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+
+            <input type="radio" id="Very Good" name="if" value="Very Good"><label for="Very Good">Very Good</label> &nbsp;
+            <input type="radio" id="Good"      name="if" value="Good">     <label for="Good">Good          </label> &nbsp;
+            <input type="radio" id="Average"   name="if" value="Average">  <label for="Average">Average    </label> &nbsp;
+            <input type="radio" id="Poor"      name="if" value="Poor">     <label for="Poor">Poor          </label> &nbsp;
+            <input type="radio" id="Very Poor" name="if" value="Very Poor"><label for="Very Poor">Very Poor</label>
+
+            <br><br><br>
+
+            <label for="img"><b>Click a picture of your room and upload it here :</b></label> &ensp;
+            <input type="file" id="img" name="img" accept="image/*">
+
+            <br><br><br>
+
+            <label for="comment"><b>What improvement you want w.r.t hostel facilities ?</b></label><br><br>
+            <textarea rows = "5" cols = "130" name = "description">
+             </textarea><br>
+
+            <br>
+
+            <button style="float:right">
+            <a href="http://www.walchandsangli.ac.in/">WCE<br>
+            <img src="wce_logo1.png" height="30px" width="30px" alt="Walchand College of Engineering,Sangli">
+            </a>
+            </button>
+
+            <label><input type="checkbox" name="terms" id="terms" onchange="activateButton(this)"> I agree that I have filled the form honestly.</label>
+
+            <br><br>
+            &ensp;&ensp;
+
+            <input type="reset" value="Reset"> &ensp;
+
+            <button onclick="myalert()"> Submit</button> 
+
+          </form>
+    </body>
+</html>
