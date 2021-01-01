@@ -1,0 +1,101 @@
+<!doctype html>
+<title>SUZUKI LOGIN PAGE</title>
+<html>
+    <head>
+        <title>LOGIN FORM</title>
+        <script> 
+	<img src="C:\Users\Asus\Desktop\html\logos.png" class="center">
+            function myalert() 
+            { 
+                alert("Your form will be submitted . Thanks for your valuable feedback !"); 
+            } 
+            function activateButton(element) 
+            {
+                if(element.checked) 
+                {
+                    document.getElementById("submit").disabled = false;
+                }
+                else  
+                {
+                    document.getElementById("submit").disabled = true;
+                }
+            }
+      </script> 
+    </head>
+    <body style="background-color:rgb(98, 157, 190)">
+	
+        <h1 ALIGN="center">SUZUKI ONLINE SERVICES</h1>
+        <br>
+	
+        <h2  ALIGN="center">customer details</h2>
+        <br>
+        <hr>
+        <br><form style="font-size:larger;margin-left: 200px;margin-right:200px;padding:30px;background-color:rgb(221, 184, 208);border:14px ;border-color: rgb(11, 12, 12);">
+            <label for="name"><b>Good name:</b></label>
+            <input type="text" id="name" name="name" maxlength="50">
+
+            <br><br>
+
+            <label for="wheeler">&ensp;&ensp;&ensp;&ensp;<b>wheeler:</b></label>
+
+            &nbsp;
+
+            <input type="radio" id="2wheeler" name="wheeler" value="2wheeler">
+            <label for="2wheeler">2 wheeler</label>
+
+            &nbsp;
+
+            <input type="radio" id="4wheeler" name="wheeler" value="4wheeler">
+            <label for="4wheeler">4 wheeler</label>
+
+            &nbsp;
+
+            <input type="radio" id="6wheeler" name="wheeler" value="6wheeler">
+            <label for="6wheeler">6 wheeler</label>
+
+            <br><br><br>
+
+            <label for="problems">Choose a problem:</label>
+
+<select name="probelem associated" id="problems">
+  <option value="pucture">tyre got puncture</option>
+  <option value="coolant">coolant leakage</option>
+  <option value="engine">engine issue</option>
+  <option value="scratch">body scratch</option>
+</select>
+
+  <br><br>
+  <input type="submit" value="Submit"><br><br><br>
+
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+
+            
+  <label for="if"><b>general checkup </b></label> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+
+   <input type="radio" id="yes" name="if" value="yes"><label for="yes">yes</label> &ensp;
+   <input type="radio" id="no"      name="if" value="no">     <label for="no">no</label> &ensp;
+          
+
+            <br><br><br>
+	    <label for="date-time">current (date and time):</label>
+<input type="datetime-local" id="date-time" name="date-time">
+            
+
+            <br><br><br>
+
+            <button style="float:right">
+            
+            </button>
+
+            <label><input type="checkbox" name="terms" id="terms" onchange="activateButton(this)"> I agree that I have filled the form honestly.</label>
+
+            <br><br>
+            &ensp;&ensp;
+
+            <input type="reset" value="Reset"> &ensp;
+
+            <button onclick="myalert()"> Submit</button> 
+
+          </form>
+ </body>
+</html>
